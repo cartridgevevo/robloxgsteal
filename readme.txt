@@ -9,4 +9,4 @@ Please load run.bat and configurate your discord webhooks before you run GSteal
 
 -
 
-made by mrcorbie, cartridgevevo & ryuunosuke02420
+made by mrcorbie, charge, cartridgevevo & ryuunosuke02420
