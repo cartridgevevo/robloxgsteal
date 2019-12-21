@@ -7,6 +7,10 @@ If you haven't, please configure your GSteal for Discord Webhooks
 ''')
 
 print('''
+Join the GSteal Discord Server - https://discord.gg/gwpYqdy
+''')
+
+print('''
 GSteal - Owned and Emotional Support by Charge. GSteal by MrCorbie. Modified by ryuunosuke02420 and cartridgevevo
 ''')
 
@@ -32,7 +36,7 @@ def sendmessage(webURL, groupID, name, memberCount, robux, description, date):
         "embeds": [
         {
             "author": {
-            "name": "GSteal",
+            "name": "GSteal v1.2.1",
             "url": "",
             "icon_url": ""
         },
@@ -71,7 +75,7 @@ def sendmessage(webURL, groupID, name, memberCount, robux, description, date):
             },
         ],
             "footer": {
-             "text": "Mavde by MrCorbie & cartridgeveo " + str(date),
+             "text": "Made by MrCorbie & cartridgevevo | Owned by Charge ",
                          "icon_url": ""
             }
         }
@@ -94,7 +98,7 @@ def group_scanning():
             global groups_removed
 
             if platform.system() == 'Windows':
-                ctypes.windll.kernel32.SetConsoleTitleW('GSteal | Total Checking : {}  | Groups Valid : {} | Groups Removed : {} | R$ Earned : {} | by MrCorbie'.format(groups_scanned,groups_valid,groups_removed,robux))
+                ctypes.windll.kernel32.SetConsoleTitleW('GSteal | Total Checking : {}  | Groups Valid : {} | Groups Removed : {} | R$ Earned : {} | by MrCorbie & cartridgevevo | Owned by Charge'.format(groups_scanned,groups_valid,groups_removed,robux))
             groupID = random.randint(1,5901231)
 
             checking = requests.get('https://groups.roblox.com/v1/groups/{}'.format(groupID))
