@@ -7,16 +7,22 @@ If you haven't, please configure your GSteal for Discord Webhooks
 ''')
 
 print('''
-GSteal - Discord Webhooked. GSteal by MrCorbie. Modified by ryuunosuke02420 and cartridgevevo
+GSteal - Owned and Emotional Support by Charge. GSteal by MrCorbie. Modified by ryuunosuke02420 and cartridgevevo
 ''')
+
 thread_count = int(input('How many threads do you want? (500 is good for playing, 850 for maximum efficency) : '))
 botstart_note = str(input('What customized note do you want on your embed? : '))
 
 data = json.load(open('config.json', 'r'))
 
+# Discord Webhooks - Connected to config.json
 url = data['url']
 url_failed = data['url_failed']
 url_10ormode = data['url_10ormode']
+url_100member = data['url_100member']
+
+# Robux Configuration - Connected to config.json
+lowrobux = data['lowrobux']
 
 
 def sendmessage(webURL, groupID, name, memberCount, robux, description, date):
@@ -65,7 +71,7 @@ def sendmessage(webURL, groupID, name, memberCount, robux, description, date):
             },
         ],
             "footer": {
-             "text": "Made by MrCorbie & cartridgevevo" + str(date),
+             "text": "Mavde by MrCorbie & cartridgeveo " + str(date),
                          "icon_url": ""
             }
         }
@@ -119,7 +125,7 @@ def group_scanning():
                             robux += currency.json()['robux']
                             with open('groups_robux.txt','a',encoding='UTF-8') as f:
                                 f.write('{} | {} | {} | Robux : {}\n'.format(checking.json()['id'],checking.json()['name'],'https://www.roblox.com/groups/' + str(groupID) + 'a',currency.json()['robux']))
-                            if currency.json()["robux"]<10:
+                            if currency.json()["robux"]<lowrobux:
                                 sendmessage(url, checking.json()['id'], checking.json()['name'], checking.json()['memberCount'], currency.json()['robux'], checking.json()['description'], "26/05/2019")
                             else:
                                 sendmessage(url_10ormode, checking.json()['id'], checking.json()['name'], checking.json()['memberCount'], currency.json()['robux'], checking.json()['description'], "26/05/2019")
