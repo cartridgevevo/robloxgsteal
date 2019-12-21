@@ -1,6 +1,7 @@
 @ECHO off
 cls
 :start
+ASCII.py
 ECHO.
 ECHO 1. Start GSteal
 ECHO 2. Configure GSteal
@@ -13,10 +14,20 @@ ECHO "%choice%" is not valid, try again
 ECHO.
 goto start
 :start
+ECHO installing requests
 pip install requests
+cls
+ECHO installing random
 pip install random
+cls
+ECHO installing threading
 pip install threading
+cls
+ECHO installing ctypes
 pip install ctypes
+cls
+ASCII.py
+
 
 gsteal.py
 goto end

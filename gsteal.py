@@ -11,7 +11,7 @@ Join the GSteal Discord Server - https://discord.gg/gwpYqdy
 ''')
 
 print('''
-GSteal - Owned and Emotional Support by Charge. GSteal by MrCorbie. Modified by ryuunosuke02420 and cartridgevevo
+GSteal - v3m And Emotional Support by Charge. GSteal by MrCorbie. Modified by ryuunosuke02420 and cartridgevevo
 ''')
 
 thread_count = int(input('How many threads do you want? (500 is good for playing, 850 for maximum efficency) : '))
