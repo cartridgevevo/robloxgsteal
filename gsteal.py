@@ -28,7 +28,7 @@ lowrobux = data['lowrobux']
 def sendmessage(webURL, groupID, name, memberCount, robux, description, date):
     data = {
         "username": "GSteal",
-        "avatar_url": "",
+        "avatar_url": "https://cdn.discordapp.com/icons/585451780977065994/cddcc4cf0acf9b57c2654331fec153e9.png",
         "embeds": [
         {
             "author": {
