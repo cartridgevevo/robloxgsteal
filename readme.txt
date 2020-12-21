@@ -1,3 +1,6 @@
+!! This is incredibly depricated and doesn't function properly anymore, do whatever you want to it !!
+
+
 You need to install Python from the online link and click add python to PATH (https://www.python.org/downloads/windows/) and from the Microsoft Store when it prompts you.
 You also need to install PIP (Instructions: https://www.youtube.com/watch?v=cGW70Hc0W4M)
 
@@ -13,3 +16,5 @@ Made By MrCorbie, Charge, cartridgevevo & ryuunosuke02420
 
 
 Support & Development Discord Server : https://discord.gg/gwpYqdy
+
+
