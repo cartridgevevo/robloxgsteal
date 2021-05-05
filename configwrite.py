@@ -12,14 +12,14 @@ lowrobux = str(input('What Robux amount do you consider low? (to not set this up
 url = str(input('Which Discord Webhook URL are you using for groups with less then the configured low robux amount? : '))
 url_10ormode = str(input('What Discord Webhook URL are you using for groups with more then the configured robux amount? : '))
 url_failed = str(input('What Discord Webhook URL are you using for groups with no Robux? : '))
-# url_100member = str(input("Which Discord Webhook URL are you using for groups with more then 100 members? : ")) - Hey there, you're peeking into the future of GSteal, fuck off
+# url_100member = str(input("Which Discord Webhook URL are you using for groups with more then 100 members? : ")) - Hey there, you're peeking into the future of GSteal
  
 config = {
     'lowrobux': str(lowrobux),
     'url': str(url),
     'url_failed': str(url_failed),
     'url_10ormode': str(url_10ormode)
-#   'url_100member': str(url_100member) - Hey there, you're peeking into the future of GSteal, fuck off
+#   'url_100member': str(url_100member) - Hey there, you're peeking into the future of GSteal
 }
  
 with open('config.json','w') as config_dumped :
