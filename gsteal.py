@@ -23,7 +23,7 @@ data = json.load(open('config.json', 'r'))
 url = data['url']
 url_failed = data['url_failed']
 url_10ormode = data['url_10ormode']
-# url_100member = data['url_100member'] - Hey there, you're peeking into the future of GSteal, fuck off
+# url_100member = data['url_100member'] - Hey there, you're peeking into the future of GSteal
 
 # Robux Configuration - Connected to config.json
 lowrobux = data['lowrobux']
